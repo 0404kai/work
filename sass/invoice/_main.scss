@@ -1,0 +1,167 @@
+.main {
+    max-width: 780px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoice {
+    background: $color-m;
+    width: 61%;
+}
+
+.data {
+    margin: 30px 40px;
+    .select {
+        display: flex;
+        li {
+            width: 100%;
+            font-size: $font-m;
+            background-color: $color-s;
+            color: $color-m;
+            padding: 14px 55px;
+            margin-bottom: 30px;
+        }
+        li:last-child {
+            background-color: $color-m;
+            color: $color-s;
+            border: 1px solid $color-s;
+        }
+    }
+}
+
+.data-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    h2 {
+        min-width: 75px;
+        font-size: 36px;
+        color: $color-s;
+        font-weight: bolder;
+    }
+    ul {
+        display: flex;
+        position: relative;
+        margin-left: 100px;
+        .border {
+            transform: rotate(90deg);
+            height: 75px;
+            margin: 5px;
+            position: absolute;
+            top: -28px;
+            left: 57px;
+            border: 1px solid $color-s
+        }
+        .border2 {
+            transform: rotate(90deg);
+            height: 75px;
+            margin: 5px;
+            position: absolute;
+            top: -28px;
+            left: 148px;
+            border: 1px solid $color-s
+        }
+        li {
+            width: 20px;
+            height: 20px;
+            background-color: $color-s;
+            border-radius: 50%;
+            border: solid 5px $color-m;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 65px;
+        }
+        li:last-child {
+            width: 20px;
+            height: 20px;
+            background-color: $color-s;
+            border-radius: 50%;
+            border: double 5px $color-m;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0;
+        }
+        .fa-check {
+            color: $color-m;
+        }
+    }
+}
+
+.fill {
+    li {
+        margin-bottom: 16px;
+        h3 {
+            font-size: $font-m;
+            color: $color-s;
+            margin-bottom: 8px;
+        }
+        .fill-input {
+            background-color: $color-s;
+            border: none;
+            width: 100%;
+            height: 56px;
+        }
+         ::placeholder {
+            color: #8DA291;
+            padding-left: 20px;
+        }
+    }
+}
+
+.shop {
+    button {
+        width: 100%;
+        border: none;
+        color: $color-m;
+        font-size: $font-l;
+        background-color: $color-l;
+        padding: 20px 0;
+    }
+}
+
+.checkout {
+    width: 36%;
+    border: 1px solid #000;
+    .checktitle {
+        text-align: center;
+        background-color: $color-s;
+        color: $color-x;
+        font-size: $font-l;
+        padding: 16px 0;
+    }
+    .summary {
+        margin-bottom: 20px;
+        border: 1px solid $color-s;
+        ul {
+            padding: 16px 20px;
+            li {
+                display: flex;
+                justify-content: space-between;
+                font-size: $font-s;
+                color: $color-x;
+                margin-bottom: 8px;
+            }
+            li:nth-child(2) {
+                margin-bottom: 16px;
+            }
+            li:last-child {
+                font-size: $font-m;
+                font-weight: bold;
+            }
+        }
+    }
+    .checklist {
+        li {
+            display: flex;
+            a {
+                background-image: url(images/cake1.png);
+                width: 120px;
+                height: 90px;
+            }
+        }
+    }
+}

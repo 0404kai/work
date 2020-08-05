@@ -1,0 +1,10 @@
+@mixin container($max-width) {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+@mixin text-hide {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
