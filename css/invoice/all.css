@@ -529,7 +529,7 @@ form {
   }
 }
 .main {
-  max-width: 780px;
+  max-width: 800px;
   margin: 60px auto;
   display: flex;
   justify-content: space-between;
@@ -537,7 +537,8 @@ form {
 
 .invoice {
   background: #3F5D45;
-  width: 61%;
+  width: 58%;
+  height: 100%;
 }
 
 .data {
@@ -545,19 +546,29 @@ form {
 }
 .data .select {
   display: flex;
+  margin-bottom: 30px;
 }
-.data .select li {
-  width: 100%;
+.data .select li:nth-child(1) {
   font-size: 20px;
   background-color: #EAF0ED;
   color: #3F5D45;
   padding: 14px 55px;
-  margin-bottom: 30px;
 }
 .data .select li:last-child {
+  font-size: 20px;
   background-color: #3F5D45;
-  color: #EAF0ED;
   border: 1px solid #EAF0ED;
+}
+.data .select li:last-child a {
+  display: block;
+  text-decoration: none;
+  color: #EAF0ED;
+  padding: 13px 55px;
+}
+.data .select li:last-child :hover {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+  border-left: 1px solid #3F5D45;
 }
 
 .data-title {
@@ -632,12 +643,12 @@ form {
 .fill li .fill-input {
   background-color: #EAF0ED;
   border: none;
-  width: 100%;
+  width: 95%;
   height: 56px;
+  padding-left: 5%;
 }
 .fill li ::placeholder {
   color: #8DA291;
-  padding-left: 20px;
 }
 
 .shop button {
@@ -647,11 +658,11 @@ form {
   font-size: 24px;
   background-color: #FFE180;
   padding: 20px 0;
+  font-weight: bold;
 }
 
 .checkout {
-  width: 36%;
-  border: 1px solid #000;
+  width: 40%;
 }
 .checkout .checktitle {
   text-align: center;
@@ -659,6 +670,7 @@ form {
   color: #8DA291;
   font-size: 24px;
   padding: 16px 0;
+  font-weight: bold;
 }
 .checkout .summary {
   margin-bottom: 20px;
@@ -681,11 +693,30 @@ form {
   font-size: 20px;
   font-weight: bold;
 }
-.checkout .checklist li {
-  display: flex;
+.checkout .checklist .menu {
+  max-width: 100%;
+  border: 1px solid #EAF0ED;
 }
-.checkout .checklist li a {
-  background-image: url(images/cake1.png);
+.checkout .checklist .menu li {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px 0;
+}
+.checkout .checklist .menu li img {
   width: 120px;
   height: 90px;
+  padding-right: 20px;
+}
+.checkout .checklist .menu li .menu-cost h4 {
+  font-size: 16px;
+  color: #8DA291;
+  line-height: 2;
+}
+.checkout .checklist .menu li .menu-cost p {
+  font-size: 20px;
+  color: #8DA291;
+  font-weight: bold;
+}
+.checkout .checklist .menu li:last-child {
+  padding-bottom: 16px;
 }
