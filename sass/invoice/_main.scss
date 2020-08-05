@@ -1,5 +1,5 @@
 .main {
-    max-width: 780px;
+    max-width: 800px;
     margin: 60px auto;
     display: flex;
     justify-content: space-between;
@@ -7,25 +7,36 @@
 
 .invoice {
     background: $color-m;
-    width: 61%;
+    width: 58%;
+    height: 100%;
 }
 
 .data {
     margin: 30px 40px;
     .select {
         display: flex;
-        li {
-            width: 100%;
+        margin-bottom: 30px;
+        li:nth-child(1) {
             font-size: $font-m;
             background-color: $color-s;
             color: $color-m;
             padding: 14px 55px;
-            margin-bottom: 30px;
         }
         li:last-child {
+            font-size: $font-m;
             background-color: $color-m;
-            color: $color-s;
             border: 1px solid $color-s;
+            a {
+                display: block;
+                text-decoration: none;
+                color: $color-s;
+                padding: 13px 55px;
+            }
+             :hover {
+                background-color: $color-s;
+                color: $color-m;
+                border-left: 1px solid $color-m;
+            }
         }
     }
 }
@@ -102,12 +113,12 @@
         .fill-input {
             background-color: $color-s;
             border: none;
-            width: 100%;
+            width: 95%;
             height: 56px;
+            padding-left: 5%;
         }
          ::placeholder {
             color: #8DA291;
-            padding-left: 20px;
         }
     }
 }
@@ -120,18 +131,19 @@
         font-size: $font-l;
         background-color: $color-l;
         padding: 20px 0;
+        font-weight: bold;
     }
 }
 
 .checkout {
-    width: 36%;
-    border: 1px solid #000;
+    width: 40%;
     .checktitle {
         text-align: center;
         background-color: $color-s;
         color: $color-x;
         font-size: $font-l;
         padding: 16px 0;
+        font-weight: bold;
     }
     .summary {
         margin-bottom: 20px;
@@ -155,12 +167,33 @@
         }
     }
     .checklist {
-        li {
-            display: flex;
-            a {
-                background-image: url(images/cake1.png);
-                width: 120px;
-                height: 90px;
+        .menu {
+            max-width: 100%;
+            border: 1px solid $color-s;
+            li {
+                display: flex;
+                align-items: center;
+                padding: 16px 20px 0;
+                img {
+                    width: 120px;
+                    height: 90px;
+                    padding-right: 20px;
+                }
+                .menu-cost {
+                    h4 {
+                        font-size: $font-s;
+                        color: $color-x;
+                        line-height: 2;
+                    }
+                    p {
+                        font-size: $font-m;
+                        color: $color-x;
+                        font-weight: bold;
+                    }
+                }
+            }
+            li:last-child {
+                padding-bottom: 16px;
             }
         }
     }
