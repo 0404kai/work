@@ -3,16 +3,27 @@
     margin: 60px auto;
     display: flex;
     justify-content: space-between;
+    @include iPad {
+        margin: 0;
+    }
 }
 
 .invoice {
     background: $color-m;
     width: 58%;
     height: 100%;
+    @include iPad {
+        width: 100%;
+    }
 }
 
 .data {
     margin: 30px 40px;
+    @include iPad {
+        max-width: 400px;
+        margin: 30px auto;
+        width: 100%;
+    }
     .select {
         display: flex;
         margin-bottom: 30px;
@@ -21,11 +32,19 @@
             background-color: $color-s;
             color: $color-m;
             padding: 14px 55px;
+            @include iPad {
+                width: 50%;
+                padding: 12px 0;
+                text-align: center;
+            }
         }
         li:last-child {
             font-size: $font-m;
             background-color: $color-m;
             border: 1px solid $color-s;
+            @include iPad {
+                width: 50%;
+            }
             a {
                 display: block;
                 text-decoration: none;
@@ -137,6 +156,9 @@
 
 .checkout {
     width: 40%;
+    @include iPad {
+        display: none;
+    }
     .checktitle {
         text-align: center;
         background-color: $color-s;
