@@ -256,10 +256,10 @@ body {
 }
 .nav ul li a {
   text-decoration: none;
+  padding: 10px 0;
   color: #3F5D45;
   font-size: 16px;
-  font-weight: bold;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 @media (max-width: 768px) {
   .nav ul li a {
@@ -297,7 +297,6 @@ body {
 .subnav a {
   color: #3F5D45;
   text-decoration: none;
-  font-weight: bold;
   display: block;
   padding: 16px 0 16px 0;
 }
@@ -356,10 +355,12 @@ body {
   font-size: 20px;
   color: #3F5D45;
 }
+.cost h3 {
+  font-family: "Times New Roman", Times, serif;
+}
 
 .shopping {
   text-align: center;
-  font-weight: bolder;
   font-size: 24px;
   background-color: #EAF0ED;
   padding: 16px 0;
@@ -456,6 +457,7 @@ body {
   margin-right: 20px;
 }
 .top-left h2 {
+  font-family: Helvetica Neue;
   color: #EAF0ED;
   font-size: 24px;
 }
@@ -526,6 +528,7 @@ body {
   margin-bottom: 110px;
 }
 .main-left p {
+  font-family: Helvetica Neue;
   line-height: 1.5;
   font-size: 16px;
   color: #3F5D45;
@@ -547,6 +550,7 @@ body {
   text-decoration: none;
 }
 .main-bottom p {
+  font-family: Times;
   color: #3F5D45;
   font-size: 16px;
 }
