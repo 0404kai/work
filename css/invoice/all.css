@@ -586,7 +586,7 @@ body {
 }
 
 .main {
-  max-width: 800px;
+  max-width: 780px;
   margin: 60px auto;
   display: flex;
   justify-content: space-between;
@@ -599,7 +599,7 @@ body {
 
 .invoice {
   background: #3F5D45;
-  width: 58%;
+  width: 58.5%;
   height: 100%;
 }
 @media (max-width: 768px) {
@@ -627,6 +627,7 @@ body {
   background-color: #EAF0ED;
   color: #3F5D45;
   padding: 14px 55px;
+  white-space: nowrap;
 }
 @media (max-width: 768px) {
   .data .select li:nth-child(1) {
@@ -639,6 +640,7 @@ body {
   font-size: 20px;
   background-color: #3F5D45;
   border: 1px solid #EAF0ED;
+  white-space: nowrap;
 }
 @media (max-width: 768px) {
   .data .select li:last-child {
@@ -782,7 +784,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 120px;
-  height: 90px;
+  height: 80px;
   margin-right: 20px;
 }
 .checkout .checklist .menu li .menu-post2 {
@@ -791,7 +793,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 120px;
-  height: 90px;
+  height: 80px;
   margin-right: 20px;
 }
 .checkout .checklist .menu li .menu-post3 {
@@ -800,13 +802,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 120px;
-  height: 90px;
+  height: 80px;
   margin-right: 20px;
 }
 .checkout .checklist .menu li .menu-cost h4 {
   font-size: 16px;
   color: #8DA291;
   line-height: 2;
+  white-space: nowrap;
 }
 .checkout .checklist .menu li .menu-cost p {
   font-size: 20px;
