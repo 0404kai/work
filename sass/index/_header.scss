@@ -1,27 +1,46 @@
 body {
-    font-family: PingFangTC-Semibold, arial, sans-serif;
+    font-family: "PingFang TC", Semibold, arial, sans-serif;
 }
 
 .container {
-    @include container(940px)
+    @include container(940px);
+    @include iPad {
+        max-width: 700px;
+    }
 }
 
 .burger {
     display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/dehaze-24px.png");
     padding: 25px;
     background-position: center center;
     background-repeat: no-repeat;
+    @include iPad {
+        display: block;
+         :focus {
+            outline: 0;
+        }
+    }
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     margin-top: 30px;
     margin-bottom: 30px;
+    @include iPad {
+        justify-content: center;
+    }
     h1 {
         padding-top: 20px;
+        @include iPad {
+            display: none;
+        }
     }
 }
 
@@ -31,53 +50,59 @@ body {
     width: 220px;
     height: 40px;
     background-repeat: no-repeat;
-    @include text-hide()
-}
-
-.nav {
-    display: flex;
-    padding-top: 10px;
-    a {
-        text-decoration: none;
-        color: $color-m;
-        font-size: $font-s;
-        font-weight: bold;
-        padding: 10px 0;
-    }
-    a:hover {
-        color: #3f5d4563;
-    }
-    li {
-        margin-right: 60px;
-    }
-    li:last-child {
-        margin-right: 0;
-    }
-}
-
-@media(max-width:768px) {
-    .container {
-        max-width: 700px;
-    }
-    .header a h1,
-    .nav li:nth-child(1),
-    .nav li:nth-child(2),
-    .nav li:nth-child(3) {
-        display: none;
-    }
-    .nav li:last-child {
-        width: 100%;
-    }
-    .header {
-        justify-content: space-around;
-    }
-    .title {
+    @include text-hide();
+    @include iPad {
         background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
         background-position: top center;
         width: 500px;
         height: 20px;
     }
-    .burger {
-        display: block;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    .active {
+        max-height: 200px;
+    }
+    ul {
+        display: flex;
+        @include iPad {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            transition: all 0.8s;
+            overflow: hidden;
+            background: white;
+            flex-direction: column;
+        }
+        li {
+            margin-right: 60px;
+            display: flex;
+            align-items: center;
+            max-height: 0px;
+            @include iPad {
+                width: 100%;
+                 :hover {
+                    background-color: $color-s;
+                }
+            }
+            a {
+                text-decoration: none;
+                color: $color-m;
+                font-size: $font-s;
+                font-weight: bold;
+                padding: 10px 0;
+                @include iPad {
+                    padding: 10px 0;
+                    text-align: center;
+                }
+            }
+            a:hover {
+                color: #3f5d4563;
+            }
+        }
     }
 }
