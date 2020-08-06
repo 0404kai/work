@@ -476,11 +476,6 @@ body {
     font-size: 24px;
 }
 
-form {
-    display: flex;
-    position: relative;
-}
-
 .form-container {
     position: relative;
 }
@@ -601,8 +596,15 @@ form {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 414px) {
     input {
         width: 100%;
+    }
+    .top-right {
+        width: 90%;
+    }
+    .footer-bottom {
+        max-width: 90%;
+        margin-left: 5%;
     }
 }
