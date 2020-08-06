@@ -1,0 +1,81 @@
+.main {
+    margin: 0 auto 60px;
+    max-width: 940px;
+    @include iPad {
+        margin-bottom: 0;
+        position: relative;
+    }
+    .bg-img {
+        height: 460px;
+        background-image: url(https://github.com/0404kai/work/blob/master/images/cake4.png?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.pay {
+    max-width: 300px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+        display: flex;
+        align-items: center;
+        position: relative;
+        li {
+            padding-right: 60px;
+            margin-bottom: 30px;
+            .material-icons {
+                color: $color-m;
+            }
+            hr {
+                width: 66px;
+                height: 1px;
+                border: none;
+                background-color: $color-m;
+                position: absolute;
+                top: 5px;
+                left: 20px;
+            }
+            .border {
+                left: 105px;
+            }
+        }
+         :last-child {
+            padding-right: 0;
+        }
+    }
+    h2 {
+        margin-bottom: 50px;
+    }
+    button {
+        width: 300px;
+        border: none;
+        font-weight: bold;
+        font-size: $font-l;
+        background-color: $color-l;
+        color: $color-m;
+        padding: 15px 0;
+        @include iPad {
+            display: none;
+        }
+    }
+}
+
+.btn {
+    width: 100%;
+    padding: 15px 0;
+    display: none;
+    border: none;
+    font-weight: bold;
+    font-size: $font-l;
+    background-color: $color-l;
+    color: $color-m;
+    @include iPad {
+        display: block;
+    }
+}
