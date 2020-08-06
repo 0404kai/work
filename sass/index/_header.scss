@@ -1,5 +1,5 @@
 body {
-    font-family: "PingFang TC", Semibold, arial, sans-serif;
+    font-family: $font-p-s;
 }
 
 .container {
@@ -93,10 +93,10 @@ body {
             }
             a {
                 text-decoration: none;
+                padding: 10px 0;
                 color: $color-m;
                 font-size: $font-s;
-                font-weight: bold;
-                padding: 10px 0;
+                padding: 20px 0;
                 @include iPad {
                     padding: 10px 0;
                     text-align: center;
