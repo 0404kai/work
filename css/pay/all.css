@@ -397,10 +397,10 @@ body {
 }
 .nav ul li a {
   text-decoration: none;
+  padding: 10px 0;
   color: #3F5D45;
   font-size: 16px;
-  font-weight: bold;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 @media (max-width: 768px) {
   .nav ul li a {
@@ -435,6 +435,7 @@ body {
   margin-right: 20px;
 }
 .top-left h2 {
+  font-family: Helvetica Neue;
   color: #EAF0ED;
   font-size: 24px;
 }
@@ -505,6 +506,7 @@ body {
   margin-bottom: 110px;
 }
 .main-left p {
+  font-family: Helvetica Neue;
   line-height: 1.5;
   font-size: 16px;
   color: #3F5D45;
@@ -526,6 +528,7 @@ body {
   text-decoration: none;
 }
 .main-bottom p {
+  font-family: Times;
   color: #3F5D45;
   font-size: 16px;
 }
