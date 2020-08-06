@@ -573,6 +573,10 @@ form {
     width: 100%;
   }
 }
+body {
+  line-height: 1.3;
+}
+
 .main {
   max-width: 800px;
   margin: 60px auto;
@@ -719,7 +723,7 @@ form {
 }
 
 .checkout {
-  width: 40%;
+  width: 39%;
 }
 @media (max-width: 768px) {
   .checkout {
