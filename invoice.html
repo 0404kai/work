@@ -8,23 +8,26 @@
     <title>寄送發票</title>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'>
     </link>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <a href="#" class="burger"></a>
+            <button class="burger"></button>
             <a href="index.html" class="title">
                 <h1>Sweetaste</h1>
             </a>
-            <ul class="nav">
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="#">甜點</a></li>
-                <li><a href="#">登入</a></li>
-                <li>
-                    <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/143d37deb8a19ecd8eccc806ae26acbb90fe4338/student-week1/shopping_cart.png" alt="icon"></a>
-                </li>
-            </ul>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="#">甜點</a></li>
+                    <li><a href="#">登入</a></li>
+                </ul>
+                <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/143d37deb8a19ecd8eccc806ae26acbb90fe4338/student-week1/shopping_cart.png" alt="icon"></a>
+            </div>
+
         </header>
     </div>
     <!-- 客製化設計 開始 -->
@@ -34,10 +37,18 @@
                 <div class="data-title">
                     <h2>發票</h2>
                     <ul>
-                        <li><i class="fa fa-check"></i></li>
-                        <hr class="border">
-                        <li><i class="fa fa-check"></i></li>
-                        <hr class="border2">
+                        <li>
+                            <span class="material-icons">
+                                check_circle
+                            </span>
+                            <hr>
+                        </li>
+                        <li>
+                            <span class="material-icons">
+                                check_circle
+                            </span>
+                            <hr class="border">
+                        </li>
                         <li></li>
                     </ul>
                 </div>
@@ -57,7 +68,7 @@
                 </ul>
             </div>
             <div class="shop">
-                <form action="index.html">
+                <form action="pay.html">
                     <button>
                         確認結帳
                     </button>
