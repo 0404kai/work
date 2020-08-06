@@ -25,13 +25,9 @@
     }
 }
 
-form {
-    display: flex;
-    position: relative;
-}
-
 .form-container {
     position: relative;
+    display: flex;
 }
 
 .footer-icon {
@@ -123,6 +119,9 @@ form {
 }
 
 @media(max-width:768px) {
+    .form-container {
+        width: 100%;
+    }
     .footer-bottom {
         max-width: 60%;
     }
@@ -149,8 +148,15 @@ form {
     }
 }
 
-@media(max-width:400px) {
+@media(max-width:414px) {
     input {
         width: 100%;
+    }
+    .top-right {
+        width: 90%;
+    }
+    .footer-bottom {
+        max-width: 90%;
+        margin-left: 5%;
     }
 }
