@@ -437,6 +437,10 @@ body {
   .page li {
     width: 60px;
   }
+
+  .btn:hover {
+    padding: 12px 25px;
+  }
 }
 .footer {
   background: #3F5D45;
