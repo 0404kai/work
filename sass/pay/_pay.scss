@@ -10,6 +10,7 @@
         background-image: url(https://github.com/0404kai/work/blob/master/images/cake4.png?raw=true);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -18,7 +19,6 @@
 
 .pay {
     max-width: 300px;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
