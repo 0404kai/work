@@ -23,7 +23,6 @@
     a {
         color: $color-m;
         text-decoration: none;
-        font-weight: bold;
         display: block;
         padding: 16px 0 16px 0;
     }
@@ -82,11 +81,13 @@
     border-left: $color-s 1px solid;
     font-size: $font-m;
     color: $color-m;
+    h3 {
+        font-family: 'Times New Roman', Times, serif;
+    }
 }
 
 .shopping {
     text-align: center;
-    font-weight: bolder;
     font-size: $font-l;
     background-color: $color-s;
     padding: 16px 0;
