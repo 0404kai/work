@@ -3,7 +3,7 @@ body {
 }
 
 .main {
-    max-width: 800px;
+    max-width: 780px;
     margin: 60px auto;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@ body {
 
 .invoice {
     background: $color-m;
-    width: 58%;
+    width: 58.5%;
     height: 100%;
     @include iPad {
         width: 100%;
@@ -36,6 +36,7 @@ body {
             background-color: $color-s;
             color: $color-m;
             padding: 14px 55px;
+            white-space: nowrap;
             @include iPad {
                 width: 50%;
                 padding: 12px 0;
@@ -46,6 +47,7 @@ body {
             font-size: $font-m;
             background-color: $color-m;
             border: 1px solid $color-s;
+            white-space: nowrap;
             @include iPad {
                 width: 50%;
             }
@@ -189,7 +191,7 @@ body {
                     background-repeat: no-repeat;
                     background-position: center;
                     width: 120px;
-                    height: 90px;
+                    height: 80px;
                     margin-right: 20px;
                 }
                 .menu-post2 {
@@ -198,7 +200,7 @@ body {
                     background-repeat: no-repeat;
                     background-position: center;
                     width: 120px;
-                    height: 90px;
+                    height: 80px;
                     margin-right: 20px;
                 }
                 .menu-post3 {
@@ -207,7 +209,7 @@ body {
                     background-repeat: no-repeat;
                     background-position: center;
                     width: 120px;
-                    height: 90px;
+                    height: 80px;
                     margin-right: 20px;
                 }
                 .menu-cost {
@@ -215,6 +217,7 @@ body {
                         font-size: $font-s;
                         color: $color-x;
                         line-height: 2;
+                        white-space: nowrap;
                     }
                     p {
                         font-size: $font-m;
