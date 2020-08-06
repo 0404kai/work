@@ -183,10 +183,32 @@ body {
                 display: flex;
                 align-items: center;
                 padding: 16px 20px 0;
-                img {
+                .menu-post1 {
+                    background-image: url(https://github.com/0404kai/work/blob/master/images/cake1.png?raw=true);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
                     width: 120px;
                     height: 90px;
-                    padding-right: 20px;
+                    margin-right: 20px;
+                }
+                .menu-post2 {
+                    background-image: url(https://github.com/0404kai/work/blob/master/images/cake2.png?raw=true);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 120px;
+                    height: 90px;
+                    margin-right: 20px;
+                }
+                .menu-post3 {
+                    background-image: url(https://github.com/0404kai/work/blob/master/images/cake3.png?raw=true);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 120px;
+                    height: 90px;
+                    margin-right: 20px;
                 }
                 .menu-cost {
                     h4 {
