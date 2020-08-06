@@ -73,50 +73,33 @@
     }
     ul {
         display: flex;
+        align-items: center;
         position: relative;
-        margin-left: 100px;
-        .border {
-            transform: rotate(90deg);
-            height: 75px;
-            margin: 5px;
-            position: absolute;
-            top: -28px;
-            left: 57px;
-            border: 1px solid $color-s
-        }
-        .border2 {
-            transform: rotate(90deg);
-            height: 75px;
-            margin: 5px;
-            position: absolute;
-            top: -28px;
-            left: 148px;
-            border: 1px solid $color-s
-        }
         li {
-            width: 20px;
-            height: 20px;
-            background-color: $color-s;
-            border-radius: 50%;
-            border: solid 5px $color-m;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 65px;
+            padding-right: 60px;
+            .material-icons {
+                color: $color-s;
+            }
+            hr {
+                width: 66px;
+                height: 1px;
+                border: none;
+                background-color: $color-s;
+                position: absolute;
+                top: 5px;
+                left: 20px;
+            }
+            .border {
+                left: 105px;
+            }
         }
         li:last-child {
-            width: 20px;
-            height: 20px;
+            padding-right: 0;
+            width: 15px;
+            height: 15px;
+            border: 5px double $color-m;
             background-color: $color-s;
             border-radius: 50%;
-            border: double 5px $color-m;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 0;
-        }
-        .fa-check {
-            color: $color-m;
         }
     }
 }
