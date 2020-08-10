@@ -352,14 +352,20 @@ body {
 .cost {
   display: flex;
   justify-content: space-around;
-  padding: 14px 0;
-  border-right: #EAF0ED 1px solid;
   border-left: #EAF0ED 1px solid;
   font-size: 20px;
   color: #3F5D45;
 }
-.cost h3 {
+.cost h3,
+.cost p {
   font-family: "Times New Roman", Times, serif;
+  width: 60%;
+  border-right: 1px solid #EAF0ED;
+  text-align: center;
+  padding: 10px 0;
+}
+.cost p {
+  width: 40%;
 }
 
 .shopping {
