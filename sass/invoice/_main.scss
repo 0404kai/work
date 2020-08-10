@@ -101,6 +101,7 @@ body {
         }
         li:last-child {
             padding-right: 0;
+            margin-bottom: 3px;
             width: 15px;
             height: 15px;
             border: 5px double $color-m;
@@ -140,6 +141,9 @@ body {
         background-color: $color-l;
         padding: 20px 0;
         font-weight: bold;
+        &:hover {
+            background-color: #fcc884;
+        }
     }
 }
 
