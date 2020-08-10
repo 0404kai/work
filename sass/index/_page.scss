@@ -79,13 +79,19 @@
 .cost {
     display: flex;
     justify-content: space-around;
-    padding: 14px 0;
-    border-right: $color-s 1px solid;
     border-left: $color-s 1px solid;
     font-size: $font-m;
     color: $color-m;
-    h3 {
+    h3,
+    p {
         font-family: 'Times New Roman', Times, serif;
+        width: 60%;
+        border-right: 1px solid $color-s;
+        text-align: center;
+        padding: 10px 0;
+    }
+    p {
+        width: 40%;
     }
 }
 
