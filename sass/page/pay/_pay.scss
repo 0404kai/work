@@ -28,6 +28,9 @@
         li {
             padding-right: 60px;
             margin-bottom: 30px;
+            &:last-child {
+                padding-right: 0;
+            }
             .material-icons {
                 color: $color-m;
             }
@@ -43,9 +46,6 @@
             .border {
                 left: 105px;
             }
-        }
-         :last-child {
-            padding-right: 0;
         }
     }
     h2 {
