@@ -10,6 +10,9 @@
 
 .shop {
     width: 33%;
+    li:nth-child(1) {
+        background-color: $color-s;
+    }
 }
 
 .subnav {
@@ -17,7 +20,7 @@
     font-size: $font-l;
     text-align: center;
     border: 1px solid $color-s;
-     :hover {
+    &:hover {
         background-color: $color-s;
     }
     a {
@@ -94,6 +97,10 @@
     text-decoration: none;
     color: $color-m;
     display: block;
+    &:hover {
+        background-color: $color-m;
+        color: $color-s;
+    }
 }
 
 .page {
@@ -106,10 +113,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-     :nth-child(3),
-     :nth-child(4) {
-        font-family: 'Times New Roman', Times, serif;
+        &:nth-child(2) {
+            background-color: $color-m;
+            a {
+                color: $color-s;
+            }
+        }
+        &:nth-child(1),
+        &:last-child {
+            &:hover {
+                background-color: $color-s;
+            }
+        }
     }
     a {
         text-decoration: none;
