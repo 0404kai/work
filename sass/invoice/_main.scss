@@ -141,8 +141,12 @@ body {
         background-color: $color-l;
         padding: 20px 0;
         font-weight: bold;
+        outline: none;
         &:hover {
             background-color: #fcc884;
+        }
+        &:active {
+            background-color: $color-l;
         }
     }
 }
