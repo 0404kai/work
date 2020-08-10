@@ -940,6 +940,9 @@ body {
   padding-right: 60px;
   margin-bottom: 30px;
 }
+.pay ul li:last-child {
+  padding-right: 0;
+}
 .pay ul li .material-icons {
   color: #3F5D45;
 }
@@ -954,9 +957,6 @@ body {
 }
 .pay ul li .border {
   left: 105px;
-}
-.pay ul :last-child {
-  padding-right: 0;
 }
 .pay h2 {
   margin-bottom: 50px;
