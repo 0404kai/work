@@ -1,0 +1,28 @@
+@mixin container($max-width) {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+@mixin text-hide {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin iPad {
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin i6Plus {
+    @media(max-width: 414px) {
+        @content;
+    }
+}
+
+@mixin i6 {
+    @media(max-width: 375px) {
+        @content;
+    }
+}
