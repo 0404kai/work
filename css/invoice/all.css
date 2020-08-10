@@ -731,9 +731,13 @@ body {
   background-color: #FFE180;
   padding: 20px 0;
   font-weight: bold;
+  outline: none;
 }
 .shop button:hover {
   background-color: #fcc884;
+}
+.shop button:active {
+  background-color: #FFE180;
 }
 
 .checkout {
