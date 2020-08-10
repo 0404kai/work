@@ -647,6 +647,9 @@ body {
   color: #3F5D45;
   padding: 15px 0;
 }
+.pay button:hover {
+  background-color: #fcc884;
+}
 @media (max-width: 768px) {
   .pay button {
     display: none;
