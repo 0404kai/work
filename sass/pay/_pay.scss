@@ -60,8 +60,12 @@
         background-color: $color-l;
         color: $color-m;
         padding: 15px 0;
+        outline: none;
         &:hover {
             background-color: #fcc884;
+        }
+        &:active {
+            background-color: $color-l;
         }
         @include iPad {
             display: none;
