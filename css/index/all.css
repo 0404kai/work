@@ -284,6 +284,9 @@ body {
 .shop {
   width: 33%;
 }
+.shop li:nth-child(1) {
+  background-color: #EAF0ED;
+}
 
 .subnav {
   max-width: 100%;
@@ -291,7 +294,7 @@ body {
   text-align: center;
   border: 1px solid #EAF0ED;
 }
-.subnav :hover {
+.subnav:hover {
   background-color: #EAF0ED;
 }
 .subnav a {
@@ -368,6 +371,10 @@ body {
   color: #3F5D45;
   display: block;
 }
+.shopping:hover {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
 
 .page {
   display: flex;
@@ -381,9 +388,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-.page :nth-child(3),
-.page :nth-child(4) {
-  font-family: "Times New Roman", Times, serif;
+.page li:nth-child(2) {
+  background-color: #3F5D45;
+}
+.page li:nth-child(2) a {
+  color: #EAF0ED;
+}
+.page li:nth-child(1):hover, .page li:last-child:hover {
+  background-color: #EAF0ED;
 }
 .page a {
   text-decoration: none;
