@@ -588,7 +588,6 @@ body {
 @media (max-width: 768px) {
   .main {
     margin-bottom: 0;
-    position: relative;
   }
 }
 .main .bg-img {
