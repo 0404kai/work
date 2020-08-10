@@ -1,0 +1,249 @@
+.main-invoice {
+    max-width: 780px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    @include iPad {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.invoice {
+    background: $color-m;
+    width: 58.5%;
+    height: 100%;
+    @include iPad {
+        width: 100%;
+    }
+}
+
+.data {
+    margin: 30px 40px;
+    @include iPad {
+        margin: 30px auto;
+        width: 80%;
+    }
+    .select {
+        display: flex;
+        margin-bottom: 30px;
+        li:nth-child(1) {
+            font-size: $font-m;
+            background-color: $color-s;
+            color: $color-m;
+            white-space: nowrap;
+            @include iPad {
+                width: 50%;
+                padding: 12px 0;
+                text-align: center;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                color: $color-m;
+                padding: 13px 55px;
+            }
+        }
+        li:last-child {
+            font-size: $font-m;
+            background-color: $color-m;
+            border: 1px solid $color-s;
+            white-space: nowrap;
+            @include iPad {
+                width: 50%;
+                padding: 12px 0;
+                text-align: center;
+            }
+            &:hover {
+                background-color: $color-s;
+                color: $color-m;
+                border-left: 1px solid $color-m;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                color: $color-s;
+                padding: 13px 55px;
+                &:hover {
+                    color: $color-m;
+                }
+            }
+        }
+    }
+}
+
+.data-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    h2 {
+        min-width: 75px;
+        font-size: 36px;
+        color: $color-s;
+        font-weight: bolder;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        position: relative;
+        li {
+            padding-right: 60px;
+            .material-icons {
+                color: $color-s;
+            }
+            hr {
+                width: 66px;
+                height: 1px;
+                border: none;
+                background-color: $color-s;
+                position: absolute;
+                top: 5px;
+                left: 20px;
+            }
+            .border {
+                left: 105px;
+            }
+        }
+        li:last-child {
+            padding-right: 0;
+            margin-bottom: 3px;
+            width: 15px;
+            height: 15px;
+            border: 5px double $color-m;
+            background-color: $color-s;
+            border-radius: 50%;
+        }
+    }
+}
+
+.fill {
+    display: flex;
+    flex-direction: column;
+    label {
+        font-size: $font-m;
+        color: $color-s;
+        margin: 0 40px 8px;
+        @include iPad {
+            margin-left: 10%;
+        }
+    }
+    input {
+        background-color: $color-s;
+        border: none;
+        max-width: 340px;
+        margin: 0 0 16px 40px;
+        padding: 17px 20px;
+        outline: none;
+        @include iPad {
+            margin-left: 10%;
+            max-width: 75%;
+        }
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+    .fill-input {
+        margin-bottom: 30px;
+    }
+     ::placeholder {
+        color: #8DA291;
+    }
+    button {
+        width: 100%;
+        border: none;
+        color: $color-m;
+        font-size: $font-l;
+        background-color: $color-l;
+        padding: 20px 0;
+        font-weight: bold;
+        outline: none;
+        &:hover {
+            background-color: #fcc884;
+        }
+        &:active {
+            background-color: $color-l;
+        }
+    }
+}
+
+.checkout {
+    width: 39%;
+    @include iPad {
+        display: none;
+    }
+    .checktitle {
+        text-align: center;
+        background-color: $color-s;
+        color: $color-x;
+        font-size: $font-l;
+        padding: 16px 0;
+        font-weight: bold;
+    }
+    .summary {
+        margin-bottom: 20px;
+        border: 1px solid $color-s;
+        ul {
+            padding: 16px 20px;
+            li {
+                display: flex;
+                justify-content: space-between;
+                font-size: $font-s;
+                color: $color-x;
+                margin-bottom: 8px;
+            }
+            li:nth-child(2) {
+                margin-bottom: 16px;
+            }
+            li:last-child {
+                font-size: $font-m;
+                font-weight: bold;
+            }
+        }
+    }
+    .checklist {
+        ul {
+            max-width: 100%;
+            border: 1px solid $color-s;
+            li {
+                display: flex;
+                align-items: center;
+                padding: 16px 20px 0;
+                .menu-post1 {
+                    width: 120px;
+                    height: 80px;
+                    margin-right: 20px;
+                    object-fit: cover;
+                }
+                .menu-post2 {
+                    width: 120px;
+                    height: 80px;
+                    margin-right: 20px;
+                    object-fit: cover;
+                }
+                .menu-post3 {
+                    width: 120px;
+                    height: 80px;
+                    margin-right: 20px;
+                    object-fit: cover;
+                }
+                .menu-cost {
+                    h4 {
+                        font-size: $font-s;
+                        color: $color-x;
+                        line-height: 2;
+                        white-space: nowrap;
+                    }
+                    p {
+                        font-size: $font-m;
+                        color: $color-x;
+                        font-weight: bold;
+                    }
+                }
+            }
+            li:last-child {
+                padding-bottom: 16px;
+            }
+        }
+    }
+}
